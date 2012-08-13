@@ -1,6 +1,7 @@
 <html>
 <head>
 <title></title>
+<script type="text/javascript" src="/core/jig/1.11.1/js/jig.min.js"></script>
 <link href="../css/standard_base_css.css" rel="stylesheet" type="text/css"/>
 <link href="../css/standard_grid_css.css" rel="stylesheet" type="text/css"/>
 <link href="../css/standard_portlet_css.css" rel="stylesheet" type="text/css"/>
@@ -8,8 +9,18 @@
 .portlet .col h3{display:block}
 .content{margin-left:1.231em}
 .head{overflow:hidden}
+.head h1{margin-bottom:.1em}
 .head h2{font-size:1em;color:#666}
 dt{font-weight:bold}
+.item{margin:0 1.5em 2em 18em}
+.pronounce{margin:.2em 0 1em}
+.whatworks{border-radius:8px;border:1px solid #ccc;width:16em;float:left;padding:0;margin:1em 1.5em 0 0}
+.whatworks .head{background-color:#ccc;height:120px}
+.whatworks .head:after{content:"Image"}
+.whatworks h2{color:white;background-image: -moz-linear-gradient(bottom, #85590C 0%, #CC8843 100%);padding:9px 0;padding-left:.9em;margin:0}
+.whatworks .body{padding:.9em}
+
+.item a.ui-ncbibutton{color:#fff !important}
 </style>
 </head>
 <body>
@@ -18,25 +29,31 @@ dt{font-weight:bold}
     <div class="col eight_col">
         <div class="content">
             <div class="head">
-                <div style="width:200px;height:200px;margin:1em 1em 1em 0;background-color:#ccc;float:left">Image</div>
-                <h1>Abacavir (by mouth)</h1>
-                <h2>a-BAK-a-vir</h2>
-                <p>Treats human immunodeficiency virus (HIV) infection. HIV causes acquired immune deficiency syndrome (AIDS). This medicine does not cure HIV or AIDS, but combinations of drugs may slow the progress of the disease... <a href="#">Read more</a></p>
-                <dl>
-                    <dt>Drug classes <a href="#" class="small">What's this</a></dt>
-                    <dd>Antiretroviral drug, <a href="#">Nucleoside reverse transcriptase inhibitor</a></dd>
-                    <dt>Combinations including this drug</dt>
-                    <dd>
-                        <ul>
-                            <li><a href="#">Abacavir/Lamivudine</a></li>
-                            <li><a href="#">Abacavir/Lamivudine/Zidovudine</a></li>
-                        </ul>
-                    </dd>
-                    <dt>Brand name(s)</dt>
-                    <dd><a href="#">Ziagen</a>... <a href="#">See more</a></dd>
-                </dl>
+                <div class="whatworks">
+                    <div class="head">
+
+                    </div>
+                    <h2>What Works</h2>
+                    <div class="body">
+                        <p>This summary of a Cochrane review presents what we know from research about the effects of abatacept on rheumatoid arthritis... <a href="#">Read more</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h1>Abatacept (Injection)</h1>
+                    <h2 class="pronounce">a-BAK-a-vir</h2>
+                    <p class="description">Treats moderate to severe rheumatoid arthritis for adults who have taken other medicines for RA. Also treats moderate to severe juvenile idiopathic arthritis in children 6 years of age and older... <a href="#">Read more</a></p>
+                    <div class="buttons">
+                        <a href="#" class="jig-ncbibutton" data-jigconfig="'color':'copper'">Uses</a><a href="#" class="jig-ncbibutton" data-jigconfig="'color':'copper'">Side effects</a>
+                    </div>
+                    <dl>
+                        <dt>Drug classes <a href="#" class="small">About this</a></dt>
+                        <dd>Immune modulator, <a href="#">Selective T cell costimulation modulator</a></dd>
+                        <dt>Brand names</dt>
+                        <dd>Orencia</dd>
+                    </dl>
+                </div>
             </div>
-            <div class="whatworks portlet">
+            <div class="portlet">
                 <div class="portlet_head">
                     <h2>What works? Research summarized</h2>
                     <a href="#" class="whatsthis">What's this</a>
