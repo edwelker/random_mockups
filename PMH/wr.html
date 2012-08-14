@@ -6,28 +6,49 @@
 <link href="../css/standard_grid_css.css" rel="stylesheet" type="text/css"/>
 <link href="../css/standard_portlet_css.css" rel="stylesheet" type="text/css"/>
 <style>
-.portlet .col h3{display:block}
 .content{margin-left:1.231em}
 .head{overflow:hidden}
-.head h1{margin-bottom:.1em}
-.head h2{font-size:1em;color:#666}
-dt{font-weight:bold}
-.item{margin:0 1.5em 2em 19em}
-.pronounce{margin:.2em 0 1em}
+.head h1{margin-bottom:.1em;margin-top:.7222em}
+.head h2{font-size:1em}
 .description{font-size:1.1538em}
-.whatworks{border-radius:8px;border:1px solid #ccc;width:16em;float:left;padding:0;margin:1em 1.5em 0 0}
-.whatworks .head{background-color:#ccc;height:120px}
+.whatworks{border-radius:8px;border:1px solid #ccc;width:16em;float:right;padding:0;margin:6em 1.5em 0 1.5em}
+.whatworks .head{background-color:#ccc;height:120px;border-radius:8px 8px 0 0;margin:0}
 .whatworks .head:after{content:"Image"}
-.whatworks h2{color:white;padding:9px 0;padding-left:.9em;margin:0;
-background-image: linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67) 100%);
-background-image: -o-linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67) 100%);
-background-image: -moz-linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67) 100%);
-background-image: -webkit-linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67) 100%);
-background-image: -ms-linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67) 100%);}
-.whatworks .body{padding:.9em}
+.whatworks h2{padding:9px 0 0;padding-left:.9em;margin:0;}
+.whatworks .body{padding:0 1em 1em 1em}
+.whatworks .body p:last-child{margin-bottom:0}
 
+/* A portlet bug? */
+.portlet{overflow:hidden}
+
+dt{font-weight:bold;font-size:1.2307em}
+dl dd{margin:0 0 .7em 0;padding:0;}
+
+.small{font-size:.6875em}
+.pronounce{margin:.2em 0 1em}
 .item a.ui-ncbibutton{color:#fff !important}
-.content .portlet{margin-top:2em}
+.portlet_shadow{box-shadow:1px 1px 2px #EDE7DA}
+
+
+.ui-widget-content .ui-ncbibutton-copper, .ui-widget-content .ui-ncbibutton-copper[disabled]:active, .ui-ncbibutton-copper, .ui-ncbibutton-copper[disabled]:active{
+background-image: linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67) 100%) !important;
+background-image: -o-linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67) 100%) !important;
+background-image: -moz-linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67) 100%) !important;
+background-image: -webkit-linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67) 100%) !important;
+background-image: -ms-linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67) 100%) !important;
+}
+.ui-button-text{font-size:1.0769em;font-weight:bold}
+
+.brand_names h2{color:#985735;margin:.3em 0 .6428em}
+
+.learn_about .portlet_con1ent a{color:#14376c}
+.learn_about .portlet_content p{margin-left:7em}
+.learn_about .image{width:75px;height:100px;float:left}
+
+.head{margin-bottom:2em}
+.more_research{margin-bottom:2.154em;overflow:hidden}
+.more_research h2,.more_research h3{margin: .6923em 0}
+
 </style>
 </head>
 <body>
@@ -36,15 +57,16 @@ background-image: -ms-linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67)
     <div class="col eight_col">
         <div class="content">
             <div class="head">
-                <div class="whatworks">
+                <div class="whatworks portlet_shadow">
                     <div class="head">
 
                     </div>
-                    <h2>What Works</h2>
+                    <h2>What works?</h2>
                     <div class="body">
                         <p>This summary of a Cochrane review presents what we know from research about the effects of abatacept on rheumatoid arthritis... <a href="#">Read more</a></p>
                     </div>
                 </div>
+               
                 <div class="item">
                     <h1>Abatacept (Injection)</h1>
                     <h2 class="pronounce">a-BAT-a-sept</h2>
@@ -60,11 +82,9 @@ background-image: -ms-linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67)
                     </dl>
                 </div>
             </div>
-            <div class="portlet">
-                <div class="portlet_head">
-                    <h2>What works? Research summarized</h2>
-                    <a href="#" class="whatsthis">What's this</a>
-                </div>
+
+            <div class="more_research alt-portlet">
+                <h2 class="moreresearch">More research on what works</h2>
                 <div class="col six_col">
                     <h3>Latest reviews of evidence</h3>
                     <h4><a href="#">Title of the article</a></h4>
@@ -73,11 +93,10 @@ background-image: -ms-linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67)
                     <p>Couple sentence summary of article to give the user a feel for what the content is to decide if it is what they want.</p>
                     <h4><a href="#">Title of the article</a></h4>
                     <p>Couple sentence summary of article to give the user a feel for what the content is to decide if it is what they want.</p>
-
-                    <p><a href="#">See all</a></p>
+                    
+                    <p class="all"><a href="#">See all (#)</a></p>
                 </div>
-                <div class="col six_col">
-
+                <div class="col six_col last">
                     <h3>Summaries for consumers</h3>
 
                     <h4><a href="#">Title of the article</a></h4>
@@ -87,22 +106,46 @@ background-image: -ms-linear-gradient(bottom, rgb(133,89,12) 0%, rgb(204,136,67)
                     <h4><a href="#">Title of the article</a></h4>
                     <p>Couple sentence summary of article to give the user a feel for what the content is to decide if it is what they want.</p>
 
-                    <p><a href="#">See all</a></p>
+                    <p class="all"><a href="#">See all (#)</a></p>
                 </div>
+            </div>
+            <div class="brand_names">
+                <h2 class="h3">Brand names</h2>
+                <p>Provided by <a href="#">RxNorm</a>, a list of names for clinical drugs produced by the National Library of Medicine</p>
             </div>
         </div>
     </div>
     <div class="col four_col last">
-        <div class="portlet">
+        <div class="portlet blue portlet_shadow">
             <div class="portlet_head">
-                <h2>Additional resources</h2>
+                <h3>Things you need to know</h3>
             </div>
-            <div class="portlet_body">
+            <div class="body">
+                <div class="prtlt_img" style="width:60px;height:50px;background-color:#ccc">Image</div>
                 <ul>
-                    <li><a href="#">FDA approved &amp; other uses</a></li>
-                    <li><a href="#">Reporting side effects to the FDA</a></li>
-                    <li><a href="#">Using medicines long term</a></li>
-                    <li><a href="#">More about using medicines</a></li>
+                    <li><a href="#">Approved drug uses</a></li>
+                    <li><a href="#">More information about a drug</a></li>
+                    <li><a href="#">Tips about using medicines</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="portlet learn_about alt-portlet">
+            <h3>Learn about...</h3>
+            <div class="portlet_content">
+                <div class="image"><a class="img_link" href="#" style="width:75px;height:100px;background-color:#ccc">Image</a></div>
+                <p><a href="#">Making smart health choices</a></p>
+                <p>Develop the skills to assess health advice and make better informed decisions about your health and managing illness.</p>
+            </div>
+        </div>
+        <div class="portlet alt-portlet">
+            <h3>Related conditions</h3>
+            <div class="portlet_content">
+                <ul>
+                    <li><a href="#">Arthritis</a></li>
+                    <li><a href="#">Rheumatoid arthritis</a></li>
+                    <li><a href="#">Psoriasis</a></li>
+                    <li><a href="#">Cancer</a></li>
+                    <li><a href="#">Leukemia</a></li>
                 </ul>
             </div>
         </div>
