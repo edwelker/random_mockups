@@ -7,18 +7,20 @@
 <link href="../css/standard_portlet_css.css" rel="stylesheet" type="text/css"/>
 <style>
 body{margin:0}
-.content{/*margin-left:1.231em*/margin-left:1.75em}
+.content{/*margin-left:1.231em*/margin-left:1.8461em}
 .head{overflow:hidden}
-.head h1{margin-bottom:0;margin-top:.7222em}
+.head h1{margin-bottom:0;margin-top:.9166em}
 .head h2{font-size:1em;color:#666}
-.description,.summary{font-size:1.1538em}
-.description{margin-top:1em}
-.description .read_more{font-size:.8666em}
+.pronounce{margin:0 0 .5em}
+.summary{font-size:1.1730em;line-height:1.3333;margin:.3em 0 .4em}
+.description{font-size:1em}
+.description{margin-top:2em}
 .summary_wrap{width:90%}
-.summary{margin-bottom:.4em}
-h3.summary{font-size:1.1538em;line-height:inherit;margin-right:.5em;font-weight:normal}
+.top{border-bottom:1px solid #e8e8e8}
+
 .item{margin-right:2em}
 
+.center{text-align:center}
 .whatworks{border-radius:9px;border:1px solid #ccc;width:16em;float:left;padding:0;margin:1.5em 1.5em 0 0}
 .whatworks a{text-decoration:none;display:block}
 .whatworks > a:hover{background-color:#eee}
@@ -53,7 +55,6 @@ dl{margin-top:1.5em}
 dt{font-weight:bold;font-size:1.0769em}
 dl dd{margin:0 0 .7em 0;padding:0;}
 .small{font-size:.6875em}
-.pronounce{margin:0 0 .5em}
 .item a.ui-ncbibutton{color:#fff !important}
 .portlet_shadow{box-shadow:1px 1px 2px #EDE7DA}
 
@@ -87,9 +88,9 @@ right: 0.8em;
 }
 .alt-portlet.portlet ul li,.blue.portlet ul li{border-bottom:0}
 
-.buttons{margin:.4em 0 0;padding-bottom:1em;border-bottom:1px dotted #eee}
-.buttons a{font-size:1.1538em;margin-right:1.5em;font-weight:bold;text-decoration:none}
-.buttons a:hover{text-decoration:underline}
+.links{margin:.4em 0 0;padding-bottom:1em}
+.links a{font-size:1.1538em;margin-right:1.5em;font-weight:bold;text-decoration:none}
+.links a:hover{text-decoration:underline}
 .more_research h3{margin:1em 0 .3em}
 h2.moreresearch{font-size:1.3846em;margin:0}
 .more_research h4{margin:1em 0 .5em}
@@ -148,16 +149,19 @@ background-image: -webkit-gradient(
             <div class="head">
                
                 <div class="item">
-                    <h1>Abatacept (Injection)</h1>
-                    <h2 class="pronounce">a-BAT-a-sept</h2>
-                    <div class="summary_wrap">
-                        <p class="summary">Treats moderate to severe rheumatoid arthritis for adults who have taken other medicines for RA. Also treats moderate to severe juvenile idiopathic arthritis in children 6 years of age and older.</p>
+                    <div class="top">
+                        <h1>Abatacept (Injection)</h1>
+                        <h2 class="pronounce">a-BAT-a-sept</h2>
+                        <div class="summary_wrap">
+                            <p class="summary">Treats moderate to severe rheumatoid arthritis for adults who have taken other medicines for RA. Also treats moderate to severe juvenile idiopathic arthritis in children 6 years of age and older.</p>
+                        </div>
+                        
+                        <div class="links">
+                            <a href="#">Uses</a>
+                            <a href="#">Side effects</a>
+                            <a href="#">Read more</a>
+                        </div>
                     </div>
-                    
-                    <div class="buttons">
-                        <a href="#">Uses</a><a href="#">Side effects</a>
-                    </div>
-                    
                     
                     <div class="whatworks portlet_shadow">
                         <a href="#whatworks" class="head">
@@ -173,12 +177,12 @@ background-image: -webkit-gradient(
                     
                     <p class="description">Abatacept injection is used alone or together with other medicines to reduce the signs and symptoms of moderate to severe rheumatoid arthritis. Abatacept helps keep joint damage from getting worse after other medicines have been used and did not work well... <a href="#" class="read_more">Read more</a></p>
                     <dl>
-                        <dt>Drug classes <a href="#" class="small">About this</a></dt>
-                        <dd>Immune modulator, <a href="#">Selective T cell costimulation modulator</a></dd>
                         <dt>Brand names</dt>
                         <dd>Orencia</dd>
                         <dt>Other forms</dt>
                         <dd><a href="#">On the skin</a>, <a href="#">By breathing</a>, <a href="#">Into the nose</a></dd>
+                        <dt>Drug classes <a href="#" class="small">About this</a></dt>
+                        <dd>Immune modulator, <a href="#">Selective T cell costimulation modulator</a></dd>
                     </dl>
                 </div>
             </div>
@@ -221,7 +225,9 @@ background-image: -webkit-gradient(
                 <h3>Things you need to know</h3>
             </div>
             <div class="body">
-                <div style="margin:0 auto;width:60px;height:50px;background-color:#ccc">Image</div>
+                <div class="center">
+                    <img src="toknow.jpg"/> 
+                </div>
                 <ul>
                     <li><a href="#">Approved drug uses</a></li>
                     <li><a href="#">More information about a drug</a></li>
