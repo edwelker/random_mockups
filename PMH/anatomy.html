@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<script type="text/javascript" src="/core/jig/1.11.1/js/jig.min.js"></script>
+<link href="../css/standard_base_css.css" rel="stylesheet" type="text/css"/>
+<link href="../css/standard_grid_css.css" rel="stylesheet" type="text/css"/>
+<link href="../css/standard_portlet_css.css" rel="stylesheet" type="text/css"/>
+<style>
+body{margin:0}
+.content{/*margin-left:1.231em*/margin-left:1.8461em}
+.head{overflow:hidden}
+.head h1{margin-bottom:0;margin-top:.9166em}
+.head h2{font-size:1em;color:#666}
+.summary{font-size:1.1730em;line-height:1.3333;margin:.3em 0 .4em}
+.description{font-size:1em}
+.description{margin-top:2em}
+.summary_wrap{width:90%}
+.top{border-bottom:1px solid #e8e8e8}
+
+.item{margin-right:2em}
+
+.center{text-align:center}
+.whatworks{border-radius:9px;border:1px solid #ccc;width:16em;float:left;padding:0;margin:1.5em 1.5em 0 0}
+.whatworks a{text-decoration:none}
+.whatworks > a:hover{background-color:#eee}
+.whatworks a p{color:#2f4a8b}
+.whatworks .head{height:120px;border-radius:9px 9px 0 0;display:block}
+.whatworks h2{color:#fff;font-size:1.3846em;padding:6px 0;padding-left:.9em;margin:0;background-color:#5f8ece
+background-image: linear-gradient(bottom, rgb(51,102,153) 0%, rgb(95,141,206) 100%);
+background-image: -o-linear-gradient(bottom, rgb(51,102,153) 0%, rgb(95,141,206) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(51,102,153) 0%, rgb(95,141,206) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(51,102,153) 0%, rgb(95,141,206) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(51,102,153) 0%, rgb(95,141,206) 100%);
+
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgb(51,102,153)),
+    color-stop(1, rgb(95,141,206))
+);
+}
+.whatworks h2 a,.whatworks h2 a:hover{color:#fff}
+.whatworks .body{padding:.4em .9em;overflow:hidden}
+.whatworks .body p{margin:.3em 0}
+.whatworks .body p a{color:#000}
+.whatworks .body p a:hover{color:#985735}
+.alt-portlet{padding:1em;border:1px solid #e8e8e8;border-radius:9px;overflow:hidden}
+.more_research{margin:2.5em 1em 0 0}
+.more_research p{margin-top:.2em}
+.alt-portlet h2{color:#2f4a8b;margin:.8em 0 .4em;font-size:1.0769em}
+h1{color:#2f4a8b;font-size:1.8461em}
+.four_col{padding-left:2em;width:29%}
+dl{margin-top:1.5em}
+dt{font-weight:bold;font-size:1.0769em}
+dl dd{margin:0 0 .7em 0;padding:0;}
+.small{font-size:.6875em}
+.item a.ui-ncbibutton{color:#fff !important}
+.portlet_shadow{box-shadow:1px 1px 2px #EDE7DA}
+
+.portlet.blue {
+border: 2px solid #f2eee5;
+background: #fffbee;
+margin-top: 2.85em;
+margin-right: 2px;
+border-radius: 9px;
+}
+
+.portlet.blue>div {
+margin: 1em;
+}
+.portlet.blue .body ul li{font-size:1.0769em}
+.portlet.blue .portlet_head {
+background: #5f8ece;
+padding: 0.6em 1em;
+margin: -1.65em 0.4em 0em 0.4em;
+border-radius: 7px;
+text-align:center
+}
+
+.portlet.blue .portlet_head h3 {
+color: #fff;
+}
+
+.portlet.blue .portlet_shutter {
+top: 0.65em;
+right: 0.8em;
+}
+.alt-portlet.portlet ul li,.blue.portlet ul li{border-bottom:0}
+
+.links{margin:.4em 0 0;padding-bottom:1em}
+.links a{font-size:1.1538em;margin-right:1.5em;font-weight:bold;text-decoration:none}
+.links a:hover{text-decoration:underline}
+.more_research h3{margin:1em 0 .3em}
+h2.moreresearch{font-size:1.3846em;margin:0}
+.more_research h4{margin:1em 0 .2em}
+.more_research h4 a{font-size:1.0769em;font-weight:normal;text-decoration:none}
+.more_research p a{text-decoration:none}
+.more_research .all{margin-top:2em}
+
+.brand_names{margin-top:2em;border-top:1px dotted #ccc;}
+.brand_names h2{padding-bottom:4px;border-bottom:2px solid #97b1c9}
+.brand_names p{font-size:1.0769em;color:#59331f}
+
+.alt-portlet .portlet_content{margin-top:10px;font-size:.9230em}
+.learn_about .portlet_con1ent a{color:#14376c}
+.learn_about .portlet_content p{margin-left:7em}
+.learn_about .image{float:left;overflow:visible}
+.learn_about p a{color:#14376C;text-decoration:none}
+
+.wwrm{float:right}
+.btn{background-color:#ab5c17;border-radius:4px 4px 4px 4px;box-shadow:1px 1px 1px rgba(0,0,0,.2) inset;color:#fff !important;display:inline-block;text-align:center;text-decoration:none;font-size:17px;padding:3px 10px;
+background-image: linear-gradient(bottom, rgb(158,85,25) 0%, rgb(217,126,52) 100%);
+background-image: -o-linear-gradient(bottom, rgb(158,85,25) 0%, rgb(217,126,52) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(158,85,25) 0%, rgb(217,126,52) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(158,85,25) 0%, rgb(217,126,52) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(158,85,25) 0%, rgb(217,126,52) 100%);
+
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgb(158,85,25)),
+    color-stop(1, rgb(217,126,52))
+);
+}
+.btn:hover{
+background-image: linear-gradient(bottom, rgb(122,68,24) 0%, rgb(242,121,22) 100%);
+background-image: -o-linear-gradient(bottom, rgb(122,68,24) 0%, rgb(242,121,22) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(122,68,24) 0%, rgb(242,121,22) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(122,68,24) 0%, rgb(242,121,22) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(122,68,24) 0%, rgb(242,121,22) 100%);
+
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgb(122,68,24)),
+    color-stop(1, rgb(242,121,22))
+);
+}
+</style>
+
+<!-- new anatomy styles -->
+<style>
+.source{font-size:11px;color:#666;font-style:italic}
+.image_box{float:left;width:302px;margin-right:1.5em}
+.anatomy_image img{margin:0em 1em 1em 0;border:1px solid #eee}
+.top{border-bottom:0;margin-bottom:1em}
+.image_box .description{margin:auto}
+/* should be added to the ".more_research h2" rule from previous pages */
+.anatomy h2{font-size:1.3846em;margin:0}
+.anatomy h2{color:#2f4a8b}
+.anatomy p + h2{margin-top:1.3846em}
+.related_conditions{list-style-type:none}
+</style>
+</head>
+<body>
+<img src="header.png" style=""/>
+<div class="grid">
+<div class="col twelve_col nomargin shadow">
+    <div class="col eight_col">
+        <div class="content">
+            <div class="head anatomy">
+               
+                <div class="item">
+                    <div class="top">
+                        <h1>Lungs</h1>
+                        <div class="summary_wrap">
+                            <p class="summary">A pair of organs in the chest that supply the body with oxygen, and remove carbon dioxide from the body. <span class="source">NIH&ndash;National Cancer Institute</span></p>
+                            
+                        </div>
+                        
+                        <div class="links">
+                            <span>Part of: <a href="#">The Respiratory system</a></span>
+                            <span>See also: <a href="#">Respiratory tract infections</a></span>
+                        </div>
+                    </div>
+                   
+                    <div class="image_box">
+                        <a class="anatomy_image" href="#">
+                            <img src="http://iwebdev2.ncbi.nlm.nih.gov/staff/welkere/media/medium_thumbs/CDR0000466533.jpg" alt="image_alt_text" />
+                        </a>
+                        
+                        <p class="description">Anatomy of the respiratory system, showing the trachea and both lungs and their lobes and airways. Lymph nodes and the diaphragm are also shown. Oxygen is inhaled into the lungs and passes through the thin membranes of the alveoli and into the bloodstream (see inset).
+                        </p>
+                        <p class="image_credit">
+                            <img src="http://www.cancer.gov/images/general/nci-logo-english.gif" height="41" width="176" />
+                        </p>
+                    </div>
+
+                    <h2>How do the lungs work?</h2>
+                    <p>Bluefish herring a small tadpole fish, Owens pupfish icefish threadfin bream Kafue pike Black swallower. Pejerrey merluccid hake Pacific trout threadtail tope. Finback cat shark finback cat shark Pacific herring bleak freshwater shark lake whitefish. Shortnose chimaera orangestriped triggerfish ilisha, "alfonsino mudfish airsac catfish: zebra trout armored gurnard jackfish, golden loach sailback scorpionfish." Flounder hammerhead shark flier dogfish shark electric ray sand goby gibberfish... <a href="#" class="read_more">Read more about the lungs</a></p>
+
+                    <h2>Related conditions</h2>
+                    <ul class="related_conditions">
+                        <li><a href="#">Chronic obstructive pulmonary disease (COPD)</a></li>
+                        <li><a href="#">Bronchitis</a></li>
+                        <li><a href="#">Pulmonary tuberculosis</a></li>
+                        <li><a href="#">Cystic Fibrosis</a></li>
+                        <li><a href="#">Asthma</a></li>
+                    </ul>
+                </div>    
+            </div>
+            <!--
+            <div class="more_research alt-portlet">
+                <h2 class="moreresearch">More research on what works</h2>
+                <div class="col six_col">
+                    <h3>Latest reviews of evidence</h3>
+                    <h4><a href="#">Title of the article</a></h4>
+                    <p>Couple sentence summary of article to give the user a feel for what the content is to decide if it is what they want.</p>
+                    <h4><a href="#">Title of the article</a></h4>
+                    <p>Couple sentence summary of article to give the user a feel for what the content is to decide if it is what they want.</p>
+                    <h4><a href="#">Title of the article</a></h4>
+                    <p>Couple sentence summary of article to give the user a feel for what the content is to decide if it is what they want.</p>
+                    
+                    <p class="all"><a href="#">See all (#)</a></p>
+                </div>
+                <div class="col six_col last">
+                    <h3>Summaries for consumers</h3>
+
+                    <h4><a href="#">Title of the article</a></h4>
+                    <p>Couple sentence summary of article to give the user a feel for what the content is to decide if it is what they want.</p>
+                    <h4><a href="#">Title of the article</a></h4>
+                    <p>Couple sentence summary of article to give the user a feel for what the content is to decide if it is what they want.</p>
+                    <h4><a href="#">Title of the article</a></h4>
+                    <p>Couple sentence summary of article to give the user a feel for what the content is to decide if it is what they want.</p>
+
+                    <p class="all"><a href="#">See all (#)</a></p>
+                </div>
+            </div>
+            <div class="brand_names">
+                <h2 class="h3">Brand names</h2>
+                <p>Provided by <a href="#">RxNorm</a>, a list of names for clinical drugs produced by the National Library of Medicine</p>
+            </div>
+            -->
+        </div>
+    </div>
+    <div class="col four_col last">
+        <div class="portlet blue portlet_shadow">
+            <div class="portlet_head">
+                <h3>Things you need to know</h3>
+            </div>
+            <div class="body">
+                <div class="center">
+                    <img src="toknow.jpg"/> 
+                </div>
+                <ul>
+                    <li><a href="#">Approved drug uses</a></li>
+                    <li><a href="#">More information about a drug</a></li>
+                    <li><a href="#">Tips about using medicines</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="portlet learn_about alt-portlet">
+            <h2>Learn about...</h2>
+            <div class="portlet_content">
+                <div class="image"><a class="img_link" href="#">
+                    <img src="http://dev.ncbi.nlm.nih.gov/core/assets/pmh/images/PMH_student_iPad.png"/>
+                </a></div>
+                <p><a href="#">Making smart health choices</a></p>
+                <p>Develop the skills to assess health advice and make better informed decisions about your health and managing illness.</p>
+            </div>
+        </div>
+        <div class="portlet alt-portlet">
+            <h2>Related conditions</h2>
+            <div class="portlet_content">
+                <ul>
+                    <li><a href="#">Arthritis</a></li>
+                    <li><a href="#">Rheumatoid arthritis</a></li>
+                    <li><a href="#">Psoriasis</a></li>
+                    <li><a href="#">Cancer</a></li>
+                    <li><a href="#">Leukemia</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
