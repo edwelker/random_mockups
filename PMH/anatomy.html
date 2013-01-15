@@ -146,9 +146,9 @@ background-image: -webkit-gradient(
 <!-- new anatomy styles -->
 <style>
 .source{font-size:11px;color:#666;font-style:italic}
-.image_box{float:left;width:302px;margin-right:2.5em;border-top:1px solid #ddd}
-.anatomy_image img{margin:0em 1em 1em 0}
-.top{border-bottom:0;margin-bottom:1em}
+.image_box{float:left;width:302px;margin-right:2.5em;padding:10px 0 1em 0;border-top:2px solid #ddd;border-bottom:2px solid #ddd;border-radius:8px;}
+.anatomy_image img{margin:0em 1em .5em 0}
+.top{border-bottom:0;margin-bottom:1.25em}
 .image_box .description{margin:auto;font-size:12px}
 /* should be added to the ".more_research h2" rule from previous pages */
 .anatomy h2{font-size:1.3846em;margin:0}
@@ -162,9 +162,11 @@ background-image: -webkit-gradient(
 .item dt{font-weight:bold;font-size:1.0769em}
 .item dl dd{margin:0 0 .7em 0;padding:0;}
 
-.terms_to_know dt,dd{display:inline}
+/*.terms_to_know dt,dd{display:inline}
 .terms_to_know dt:before{content:'\D\A';white-space:pre}
-.terms_to_know dt:first-child:before{content:normal}
+.terms_to_know dt:first-child:before{content:normal}*/
+
+.terms_to_know dd{margin:0;margin-bottom:1em}
 </style>
 </head>
 <body>
@@ -194,11 +196,12 @@ background-image: -webkit-gradient(
                             <img src="http://iwebdev2.ncbi.nlm.nih.gov/staff/welkere/media/medium_thumbs/CDR0000466533.jpg" alt="image_alt_text" />
                         </a>
                         
-                        <p class="description">Anatomy of the respiratory system, showing the trachea and both lungs and their lobes and airways. Lymph nodes and the diaphragm are also shown. Oxygen is inhaled into the lungs and passes through the thin membranes of the alveoli and into the bloodstream (see inset).
+                        <p class="description">Anatomy of the respiratory system, showing the trachea and both lungs and their lobes and airways. Lymph nodes and the diaphragm are also shown. Oxygen is inhaled into the lungs and passes through the thin membranes of the alveoli and into the bloodstream (see inset). <span class="source">NIH&ndash;National Cancer Institute</span>
                         </p>
-                        <p class="image_credit">
+                        <!-- <p class="image_credit">
                             <img src="http://www.cancer.gov/images/general/nci-logo-english.gif" height="41" width="176" />
-                        </p>
+                        </p> -->
+
                     </div>
 
                     <h2>How do the lungs work?</h2>
@@ -214,6 +217,10 @@ background-image: -webkit-gradient(
                         <li><a href="#">Asthma</a></li>
                     </ul>
                 </div>    
+
+                
+                        <!-- just to kick the mockup further down the page -->
+                        <br /><br /><br /><br /><br /><br />
             </div>
             <!--
             <div class="more_research alt-portlet">
@@ -257,7 +264,7 @@ background-image: -webkit-gradient(
             <div class="body">
                 <dl class="terms_to_know">
                     <dt><a href="#">Alveoli</a></dt>
-                    <dd>Tiny air sacs at the end ofhte bronchioles (tiny branches of airtubes) in the lungs.  The alveoli are where the lungs and the bloodstream exchange carbon dioxide...</dd>
+                    <dd>Tiny air sacs at the end of the bronchioles (tiny branches of airtubes) in the lungs.  The alveoli are where the lungs and the bloodstream exchange carbon dioxide...</dd>
                     <dt><a href="#">Diaphragm</a></dt> 
                     <dd>The thin muscle below the lungs and heart that separates the chest from the abdomen.</dd>
                     <dt><a href="#">Lymph node</a></dt> 
