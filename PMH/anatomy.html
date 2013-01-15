@@ -53,9 +53,9 @@ background-image: -webkit-gradient(
 .alt-portlet h2{color:#2f4a8b;margin:.8em 0 .4em;font-size:1.0769em}
 h1{color:#2f4a8b;font-size:1.8461em}
 .four_col{padding-left:2em;width:29%}
-dl{margin-top:1.5em}
-dt{font-weight:bold;font-size:1.0769em}
-dl dd{margin:0 0 .7em 0;padding:0;}
+.item dl{margin-top:1.5em}
+.item dt{font-weight:bold;font-size:1.0769em}
+.item dl dd{margin:0 0 .7em 0;padding:0;}
 .small{font-size:.6875em}
 .item a.ui-ncbibutton{color:#fff !important}
 .portlet_shadow{box-shadow:1px 1px 2px #EDE7DA}
@@ -146,15 +146,25 @@ background-image: -webkit-gradient(
 <!-- new anatomy styles -->
 <style>
 .source{font-size:11px;color:#666;font-style:italic}
-.image_box{float:left;width:302px;margin-right:1.5em}
-.anatomy_image img{margin:0em 1em 1em 0;border:1px solid #eee}
+.image_box{float:left;width:302px;margin-right:2.5em;border-top:1px solid #ddd}
+.anatomy_image img{margin:0em 1em 1em 0}
 .top{border-bottom:0;margin-bottom:1em}
-.image_box .description{margin:auto}
+.image_box .description{margin:auto;font-size:12px}
 /* should be added to the ".more_research h2" rule from previous pages */
 .anatomy h2{font-size:1.3846em;margin:0}
 .anatomy h2{color:#2f4a8b}
 .anatomy p + h2{margin-top:1.3846em}
 .related_conditions{list-style-type:none}
+.related_conditions li{margin-bottom:3px}
+
+/* should be updated from previous pages to be more specific */
+.item dl{margin-top:1.5em}
+.item dt{font-weight:bold;font-size:1.0769em}
+.item dl dd{margin:0 0 .7em 0;padding:0;}
+
+.terms_to_know dt,dd{display:inline}
+.terms_to_know dt:before{content:'\D\A';white-space:pre}
+.terms_to_know dt:first-child:before{content:normal}
 </style>
 </head>
 <body>
@@ -192,7 +202,8 @@ background-image: -webkit-gradient(
                     </div>
 
                     <h2>How do the lungs work?</h2>
-                    <p>Bluefish herring a small tadpole fish, Owens pupfish icefish threadfin bream Kafue pike Black swallower. Pejerrey merluccid hake Pacific trout threadtail tope. Finback cat shark finback cat shark Pacific herring bleak freshwater shark lake whitefish. Shortnose chimaera orangestriped triggerfish ilisha, "alfonsino mudfish airsac catfish: zebra trout armored gurnard jackfish, golden loach sailback scorpionfish." Flounder hammerhead shark flier dogfish shark electric ray sand goby gibberfish... <a href="#" class="read_more">Read more about the lungs</a></p>
+                    <p>Bluefish herring a small tadpole fish, Owens pupfish icefish threadfin bream Kafue pike Black swallower. Pejerrey merluccid hake Pacific trout threadtail tope. Finback cat shark finback cat shark Pacific herring bleak freshwater shark lake whitefish. Shortnose chimaera orangestriped triggerfish ilisha, "alfonsino mudfish airsac catfish: zebra trout armored gurnard jackfish, golden loach sailback scorpionfish." Snake eel, pelican eel coolie loach stoneroller minnow wrymouth gouramie, "walking catfish," slender barracudina European chub, icefish. Summer flounder plaice sarcastic fringehead inanga catalufa fathead sculpin lenok neon tetra platyfish ridgehead roach. Flounder hammerhead shark flier dogfish shark electric ray sand goby gibberfish... <a href="#" class="read_more">Read more about the lungs</a></p>
+
 
                     <h2>Related conditions</h2>
                     <ul class="related_conditions">
@@ -241,20 +252,20 @@ background-image: -webkit-gradient(
     <div class="col four_col last">
         <div class="portlet blue portlet_shadow">
             <div class="portlet_head">
-                <h3>Things you need to know</h3>
+                <h3>Terms to know</h3>
             </div>
             <div class="body">
-                <div class="center">
-                    <img src="toknow.jpg"/> 
-                </div>
-                <ul>
-                    <li><a href="#">Approved drug uses</a></li>
-                    <li><a href="#">More information about a drug</a></li>
-                    <li><a href="#">Tips about using medicines</a></li>
-                </ul>
+                <dl class="terms_to_know">
+                    <dt><a href="#">Alveoli</a></dt>
+                    <dd>Tiny air sacs at the end ofhte bronchioles (tiny branches of airtubes) in the lungs.  The alveoli are where the lungs and the bloodstream exchange carbon dioxide...</dd>
+                    <dt><a href="#">Diaphragm</a></dt> 
+                    <dd>The thin muscle below the lungs and heart that separates the chest from the abdomen.</dd>
+                    <dt><a href="#">Lymph node</a></dt> 
+                    <dd>A rounded mass of lymphatic tissue that is surrounded by a capsule of connective tissue. Lymph nodes...</dd>
+                </dl>
             </div>
         </div>
-        <div class="portlet learn_about alt-portlet">
+        <!-- <div class="portlet learn_about alt-portlet">
             <h2>Learn about...</h2>
             <div class="portlet_content">
                 <div class="image"><a class="img_link" href="#">
@@ -276,6 +287,7 @@ background-image: -webkit-gradient(
                 </ul>
             </div>
         </div>
+        -->
     </div>
 </div>
 </div>
