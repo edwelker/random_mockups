@@ -146,7 +146,7 @@ background-image: -webkit-gradient(
 <!-- new anatomy styles -->
 <style>
 .source{font-size:11px;color:#666;font-style:italic}
-.image_box{float:left;width:302px;margin-right:2.5em;padding:10px 0 1em 0;border-top:2px solid #ddd;border-bottom:2px solid #ddd;border-radius:8px;}
+.image_box{float:left;width:302px;margin-right:2.5em;padding:10px 0 1em 0;border-top:2px solid #ddd;border-bottom:2px solid #ddd;border-radius:8px;position:relative}
 .anatomy_image img{margin:0em 1em .5em 0}
 .top{border-bottom:0;margin-bottom:1.25em}
 .image_box .description{margin:auto;font-size:12px}
@@ -167,6 +167,17 @@ background-image: -webkit-gradient(
 .terms_to_know dt:first-child:before{content:normal}*/
 
 .terms_to_know dd{margin:0;margin-bottom:1em}
+
+.anatomy_image{display:block;position:relative;overflow:hidden}
+.enlarge{position:absolute;background:#000;background:rgba(0,0,0,.8);color:#fff;padding:.3em .5em;opacity:.5;top:0;left:5px;border-radius:6px;
+-webkit-transition: all .5s ease;-moz-transition: all .5s ease;-o-transition:all .5s ease;}
+.image_box:hover .enlarge{opacity:1}
+
+
+
+/* proposals for site-wide changes */
+.portlet.blue{margin-top:6em}
+.portlet.blue .portlet_head{background-color:#3f5a9b}
 </style>
 </head>
 <body>
@@ -182,7 +193,8 @@ background-image: -webkit-gradient(
                         <h1>Lungs</h1>
                         <div class="summary_wrap">
                             <p class="summary">A pair of organs in the chest that supply the body with oxygen, and remove carbon dioxide from the body. <span class="source">NIH&ndash;National Cancer Institute</span></p>
-                            
+                           
+                           <p>Related terms: Airways, Pulmo&ndash;, pulmonary, pneumo&ndash;</p>
                         </div>
                         
                         <div class="links">
@@ -194,9 +206,10 @@ background-image: -webkit-gradient(
                     <div class="image_box">
                         <a class="anatomy_image" href="#">
                             <img src="http://iwebdev2.ncbi.nlm.nih.gov/staff/welkere/media/medium_thumbs/CDR0000466533.jpg" alt="image_alt_text" />
+                            <span class="enlarge">Click to enlarge</span>
                         </a>
                         
-                        <p class="description">Anatomy of the respiratory system, showing the trachea and both lungs and their lobes and airways. Lymph nodes and the diaphragm are also shown. Oxygen is inhaled into the lungs and passes through the thin membranes of the alveoli and into the bloodstream (see inset). <span class="source">NIH&ndash;National Cancer Institute</span>
+                        <p class="description">Anatomy of the respiratory system, showing the trachea and both lungs and their lobes and airways. Lymph nodes and the diaphragm are also shown. Oxygen is inhaled into the lungs and passes through the thin membranes of the alveoli and into the bloodstream (see inset). <span class="source">National Institutes of Health</span>
                         </p>
                         <!-- <p class="image_credit">
                             <img src="http://www.cancer.gov/images/general/nci-logo-english.gif" height="41" width="176" />
