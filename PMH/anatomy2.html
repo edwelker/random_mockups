@@ -145,8 +145,9 @@ background-image: -webkit-gradient(
 
 <!-- new anatomy styles -->
 <style>
+.content a.a_source{color:#666}
 .source{font-size:11px;color:#666;font-style:italic}
-.image_box{float:left;width:302px;margin-right:2.5em;padding:10px 0 1em 0;border-top:2px solid #ddd;border-bottom:2px solid #ddd;border-radius:8px;position:relative}
+.image_box{float:left;width:302px;margin-right:2.5em;margin-bottom:1.5em;padding:10px 0 1em 0;border-top:2px solid #ddd;border-bottom:2px solid #ddd;border-radius:8px;position:relative}
 .anatomy_image img{margin:0em 1em .5em 0}
 .top{border-bottom:0;margin-bottom:1.25em}
 .image_box .description{margin:auto;font-size:12px}
@@ -154,7 +155,7 @@ background-image: -webkit-gradient(
 .anatomy h2{font-size:1.3846em;margin:0}
 .anatomy h2{color:#2f4a8b}
 .anatomy p + h2{margin-top:1.3846em}
-.related_conditions{list-style-type:none}
+.portlet .related_conditions{list-style-type:none;margin-bottom:1em}
 .related_conditions li{margin-bottom:3px}
 
 /* should be updated from previous pages to be more specific */
@@ -192,7 +193,7 @@ background-image: -webkit-gradient(
                     <div class="top">
                         <h1>Thyroid</h1>
                         <div class="summary_wrap">
-                            <p class="summary">A gland located beneath the larynx (voice box) that makes thyroid hormone and calcitonin. The thyroid helps regulate growth and metabolism. Also called thyroid gland. <span class="source">NIH&ndash;National Cancer Institute</span></p>
+                            <p class="summary">A gland located beneath the larynx (voice box) that makes thyroid hormone and calcitonin. The thyroid helps regulate growth and metabolism. Also called thyroid gland. <a class="a_source" href="#"><span class="source">NIH&ndash;National Cancer Institute</span></a></p>
                            
                            <p>Related terms: Thyroid gland, thyroids</p>
                         </div>
@@ -209,7 +210,7 @@ background-image: -webkit-gradient(
                             <span class="enlarge">Click to enlarge</span>
                         </a>
                         
-                        <p class="description">Anatomy of the thyroid and parathyroid glands.  <span class="source">National Institutes of Health</span>
+                        <p class="description">Anatomy of the thyroid and parathyroid glands.  <a class="a_source"  href="#"><span class="source">National Institutes of Health</span></a>
                         </p>
                         <!-- <p class="image_credit">
                             <img src="http://www.cancer.gov/images/general/nci-logo-english.gif" height="41" width="176" />
@@ -221,14 +222,6 @@ background-image: -webkit-gradient(
                     <p>Bluefish herring a small tadpole fish, Owens pupfish icefish threadfin bream Kafue pike Black swallower. Pejerrey merluccid hake Pacific trout threadtail tope. Finback cat shark finback cat shark Pacific herring bleak freshwater shark lake whitefish. Shortnose chimaera orangestriped triggerfish ilisha, "alfonsino mudfish airsac catfish: zebra trout armored gurnard jackfish, golden loach sailback scorpionfish." Snake eel, pelican eel coolie loach stoneroller minnow wrymouth gouramie, "walking catfish," slender barracudina European chub, icefish. Summer flounder plaice sarcastic fringehead inanga catalufa fathead sculpin lenok neon tetra platyfish ridgehead roach. Flounder hammerhead shark flier dogfish shark electric ray sand goby gibberfish... <a href="#" class="read_more">Read more about the lungs</a></p>
 -->
 
-                    <h2>Related conditions</h2>
-                    <ul class="related_conditions">
-                        <li><a href="#">Goiter</a></li>
-                        <li><a href="#">Graves disease</a></li>
-                        <li><a href="#">Hyperthyroidism</a></li>
-                        <li><a href="#">Hypothyroidism</a></li>
-                        <li><a href="#">Thyroid cancer</a></li>
-                    </ul>
                 </div>    
 
                 
@@ -272,25 +265,36 @@ background-image: -webkit-gradient(
     <div class="col four_col last">
         <div class="portlet blue portlet_shadow">
             <div class="portlet_head">
-                <h3>Terms to know</h3>
+                <h3>Related Conditions</h3>
             </div>
             <div class="body">
-                <dl class="terms_to_know">
-                    <dt><a href="#">Larynx</a></dt>
-                    <dd>A gland located beneath the larynx (voice box) that...</dd>
-                    <dt><a href="#">Parathyroid gland</a></dt> 
-                    <dd>One of four pea-sized glands found on the surface of the...</dd>
-                    <dt><a href="#">Thyroid hormone</a></dt> 
-                    <dd>A hormone that affects heart rate, blood pressure, body...</dd>
-                    <dt><a href="#">Thyroid gland</a></dt> 
-                    <dd>A gland located beneath the larynx (voice box) that makes...</dd>
-                    <dt><a href="#">Larynx</a></dt>
-                    <dd>A gland located beneath the larynx (voice box) that...</dd>
-                    <dt><a href="#">Parathyroid gland</a></dt> 
-                    <dd>One of four pea-sized glands found on the surface of the...</dd>
-                </dl>
-                <a href="#">See all 9 terms</a>
+                <ul class="related_conditions">
+                    <li><a href="#">Goiter</a></li>
+                    <li><a href="#">Graves disease</a></li>
+                    <li><a href="#">Hyperthyroidism</a></li>
+                    <li><a href="#">Hypothyroidism</a></li>
+                    <li><a href="#">Thyroid cancer</a></li>
+                </ul>
+                <a href="#">See all 15 related conditions</a>
             </div>
+        </div>
+        <div class="portlet alt-portlet">
+            <h3>Terms to know</h3>
+            <dl class="terms_to_know">
+                <dt><a href="#">Larynx</a></dt>
+                <dd>A gland located beneath the larynx (voice box) that...</dd>
+                <dt><a href="#">Parathyroid gland</a></dt> 
+                <dd>One of four pea-sized glands found on the surface of the...</dd>
+                <dt><a href="#">Thyroid hormone</a></dt> 
+                <dd>A hormone that affects heart rate, blood pressure, body...</dd>
+                <dt><a href="#">Thyroid gland</a></dt> 
+                <dd>A gland located beneath the larynx (voice box) that makes...</dd>
+                <dt><a href="#">Larynx</a></dt>
+                <dd>A gland located beneath the larynx (voice box) that...</dd>
+                <dt><a href="#">Parathyroid gland</a></dt> 
+                <dd>One of four pea-sized glands found on the surface of the...</dd>
+            </dl>
+            <a href="#">See all 9 terms</a>
         </div>
                         <!-- just to kick the mockup further down the page -->
                         <br /><br /><br /><br /><br /><br />
