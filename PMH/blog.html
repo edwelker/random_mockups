@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title></title>
-<script type="text/javascript" src="/core/jig/1.11.1/js/jig.min.js"></script>
+<script type="text/javascript" src="http://www.ncbi.nlm.nih.gov/core/jig/1.11.1/js/jig.min.js"></script>
 <link href="../css/standard_base_css.css" rel="stylesheet" type="text/css"/>
 <link href="../css/standard_grid_css.css" rel="stylesheet" type="text/css"/>
 <link href="../css/standard_portlet_css.css" rel="stylesheet" type="text/css"/>
@@ -184,6 +184,9 @@ background-image: -webkit-gradient(
 /* left out of anatomoy */
 .read_more{font-size:11px;color:#3F4ABB}
 
+/*fonts*/
+@font-face{font-family:ssp;src:url('ssp.eot')}
+
 /* Blog styles */
 .blog_wrap{width:80%;margin:0 auto}
 .blog_wrap .eight_col{padding-right:1em;border-right:1px solid #ddd}
@@ -195,7 +198,7 @@ background-image: -webkit-gradient(
 
 .blog_post{clear:both;margin:2em 1em 2em 0;padding:0 0 1em;border-bottom:1px solid #ddd;overflow:hidden}
 .date{font-size:11px;color:#666}
-.blog_post h2{font-size:32px;line-height:42px;font-weight:normal;font-family:georgia,times new roman,serif}
+.blog_post h2{font-size:32px;line-height:42px;font-weight:normal;font-family:ssp,georgia,times new roman,serif}
 .blog_post h2 a{color:inherit;text-decoration:none}
 .blog_post h2 a:hover{text-decoration:underline}
 .blog_post img{float:right;margin:0 0 1em 2em}
@@ -208,7 +211,8 @@ background-image: -webkit-gradient(
 #email{margin-right:6px}
 
 /* just becuase i hard code the rss url, doesn't mean you can. find it in the portal db */
-.rss{background:transparent url('//static.pubmed.gov/portal/portal3rc.fcgi/3822452/img/29146') no-repeat left top;padding-left:22px}
+.rss{background:transparent url('http://static.pubmed.gov/portal/portal3rc.fcgi/3822452/img/29146') no-repeat left top;padding-left:22px}
+
 </style>
 </head>
 <body>
