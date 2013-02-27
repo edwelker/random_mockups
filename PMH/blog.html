@@ -185,25 +185,26 @@ background-image: -webkit-gradient(
 .read_more{font-size:11px;color:#3F4ABB}
 
 /*fonts*/
-@font-face{font-family:ssp;src:url('ssp.eot')}
+@font-face{font-family:"Merriweather";src:url('fonts/Merriweather/Merriweather-Regular.ttf');}
 
 /* Blog styles */
 .blog_wrap{width:80%;margin:0 auto}
-.blog_wrap .eight_col{padding-right:1em;border-right:1px solid #ddd}
+.blog_wrap .eight_col{padding-right:1em;border-right:1px solid #ececec}
 .blog_wrap .four_col{padding-left:1em}
 .blog_wrap .four_col a{color:#2f4a8b;text-decoration:none}
 .blog_wrap .four_col a:hover{text-decoration:underline}
-.blog_head{border-bottom:4px solid #3F5A9B;margin-bottom:2em}
-.blog_head h1{margin-bottom:0;text-align:right}
+.blog_head{margin-bottom:2em}
+.blog_head .img_logo{overflow:hidden}
+.blog_wrap .logo{float:right;padding:0;display:block;background:transparent url('PMH_blog_smushed.png') no-repeat top right;width:277px;height:32px;text-indent:-9999em}
 
-.blog_post{clear:both;margin:2em 1em 2em 0;padding:0 0 1em;border-bottom:1px solid #ddd;overflow:hidden}
+.blog_post{clear:both;margin:2em 1em 2em 0;padding:0 0 1em;border-bottom:1px solid #ececec;overflow:hidden}
 .date{font-size:11px;color:#666}
-.blog_post h2{font-size:32px;line-height:42px;font-weight:normal;font-family:ssp,georgia,times new roman,serif}
+.blog_post h2{font-size:28px;line-height:40px;font-weight:normal;font-family:'Merriweather',georgia,times new roman,serif;margin-bottom:.2em;color:#2F4A8B}
 .blog_post h2 a{color:inherit;text-decoration:none}
 .blog_post h2 a:hover{text-decoration:underline}
-.blog_post img{float:right;margin:0 0 1em 2em}
-.blog_post p{font-size:14px;line-height:21px}
-.port{margin:1em 0 1em;padding:0 0 1em;border-bottom:1px solid #ddd}
+.blog_post img{float:right;margin:0 0 1em 2em;border-radius:9px}
+.blog_post p{font-size:13px;line-height:18px}
+.port{margin:1em 0 1em;padding:0 0 1em;border-bottom:1px solid #ececec}
 .port ul{list-style-type:none;padding:0;margin-left:0}
 .port ul:last-child{margin-bottom:0}
 .port ul li{margin-bottom:.3em}
@@ -211,7 +212,7 @@ background-image: -webkit-gradient(
 #email{margin-right:6px}
 
 /* just becuase i hard code the rss url, doesn't mean you can. find it in the portal db */
-.rss{background:transparent url('http://static.pubmed.gov/portal/portal3rc.fcgi/3822452/img/29146') no-repeat left top;padding-left:22px}
+.rss{background:transparent url('http://static.pubmed.gov/portal/portal3rc.fcgi/3822452/img/29146') no-repeat left top;padding-left:21px}
 
 </style>
 </head>
@@ -220,9 +221,6 @@ background-image: -webkit-gradient(
 <div class="grid">
 <div class="col twelve_col nomargin shadow">
     <div class="blog_wrap">
-        <div class="blog_head">
-            <h1>[Blog Image]</h1>
-        </div>
         <div class="col eight_col">
             <div class="blog_post">
                 <a href="#"><img src="https://www.rehabanklesprain.com/Imagesrh/sprainedanklemyths.jpg" style="width:225px;height:225px" /></a>
@@ -264,6 +262,9 @@ background-image: -webkit-gradient(
             <div style="background-color:#cc5">Put the same pagination as the News website in here</div>
         </div>
         <div class="col four_col last">
+        <div class="blog_head">
+            <h1 class="img_logo"><a href="#" class="logo">PubMed Health Blog</a></h1>
+        </div>
 
             <div class="subscribe port">
                 <h2 class="no_bottom_margin">Subscribe</h2>
@@ -291,6 +292,16 @@ background-image: -webkit-gradient(
                     <li><a href="#">Evidence skills</a></li>
                     <li><a href="#">Behind the headlines</a></li>
                     <li><a href="#">PubMed Health tips</a></li>
+                </ul>
+            </div>
+
+            <div class="follow port">
+                <h2 class="no_bottom_margin">Keep up with</h2>
+                <ul>
+                    <li><a href="#">New and updated articles</a></li>
+                    <li><a href="#" class="rss">Featured systematic reviews</a></li>
+                    <li><a href="#" class="rss">Behind the Headlines - US features</a></li>
+                    <li><a href="#" class="rss">Behind the Headlines from the NHS</a></li>
                 </ul>
             </div>
 
