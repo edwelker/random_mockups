@@ -214,6 +214,29 @@ background-image: -webkit-gradient(
 /* just becuase i hard code the rss url, doesn't mean you can. find it in the portal db */
 .rss{background:transparent url('http://static.pubmed.gov/portal/portal3rc.fcgi/3822452/img/29146') no-repeat left top;padding-left:21px}
 
+
+/* stolen from NWS-403 */
+.social-buttons button {
+background: none no-repeat scroll left top transparent;
+border: 0 none;
+display: inline-block;
+height: 16px;
+text-indent: -999em;
+width: 16px;
+}
+.social-buttons li + li {
+margin-left: 1em;
+}
+button[data-share="Facebook"] {
+background-image: url("img/facebook.gif");
+}
+button[data-share="Twitter"] {
+background-image: url("img/twitter.gif");
+}
+button[data-share="Google"] {
+background-image: url("img/google.gif");
+}
+
 </style>
 </head>
 <body>
@@ -228,7 +251,11 @@ background-image: -webkit-gradient(
                 <h2 class="no_top_margin"><a href="#">Sprained Ankles: All titles at least six words</a></h2>
 
                 <p>Even with a square image this design should look fine. Variation is good, as it will break up the monotony of the repeating posts. <a href="#" class="read_more">Read more...</a></p>
-                <p>[ Twitter Facebook Google+ Widget ]</p>
+                <ul class="social-buttons inline_list">
+                    <li><button data-share="Facebook" title="Share on Facebook">Share on Facebook</button></li>
+                    <li><button data-share="Twitter" title="Share on Twitter">Share on Twitter</button></li>
+                    <li><button data-share="Google" title="Share on Google+">Share on Google+</button></li>
+                </ul>
             </div>
             <div class="blog_post">
                 <a href="#"><img src="http://media.coreperformance.com/images/411*308/How_to_Avoid_Ankle_Sprains.jpg" style="width:50%" /></a>
@@ -236,28 +263,44 @@ background-image: -webkit-gradient(
                 <h2 class="no_top_margin"><a href="#">Sprained Ankles: 3(wide) x 2(tall) images look better</a></h2>
 
                 <p>For the teaser, I think there should be at least two rather long sentences or three relatively short sentences.  This is so that a user will sense that there's substantial information contained and that they should be interested. <a href="#" class="read_more">Read more...</a></p>
-                <p>[ Twitter Facebook Google+ Widget ]</p>
+                <ul class="social-buttons inline_list">
+                    <li><button data-share="Facebook" title="Share on Facebook">Share on Facebook</button></li>
+                    <li><button data-share="Twitter" title="Share on Twitter">Share on Twitter</button></li>
+                    <li><button data-share="Google" title="Share on Google+">Share on Google+</button></li>
+                </ul>
             </div>
             <div class="blog_post">
                 <span class="date">February 2013</span>
                 <h2 class="no_top_margin"><a href="#">Sprained Ankles: Posts without images are alright as well</a></h2>
 
                 <p>Even posts without images are fine, because again the user won't be forced to see a constant repetition of the same thing. The image of every third post could be surpressed from within portal, which would allow images on the content page, which is a plus. <a href="#" class="read_more">Read more...</a></p>
-                <p>[ Twitter Facebook Google+ Widget ]</p>
+                <ul class="social-buttons inline_list">
+                    <li><button data-share="Facebook" title="Share on Facebook">Share on Facebook</button></li>
+                    <li><button data-share="Twitter" title="Share on Twitter">Share on Twitter</button></li>
+                    <li><button data-share="Google" title="Share on Google+">Share on Google+</button></li>
+                </ul>
             </div>
             <div class="blog_post">
                 <span class="date">Janurary 2013</span>
                 <h2 class="no_top_margin"><a href="#">How to date blog posts: a guide</a></h2>
 
                 <p>Dates for posting should never have an individual date on this page because once we at NCBI get distracted, it'll be less obvious there's a giant lag in posts. <a href="#" class="read_more">Read more...</a></p>
-                <p>[ Twitter Facebook Google+ Widget ]</p>
+                <ul class="social-buttons inline_list">
+                    <li><button data-share="Facebook" title="Share on Facebook">Share on Facebook</button></li>
+                    <li><button data-share="Twitter" title="Share on Twitter">Share on Twitter</button></li>
+                    <li><button data-share="Google" title="Share on Google+">Share on Google+</button></li>
+                </ul>
             </div>
             <div class="blog_post">
                 <span class="date">Janurary 2013</span>
                 <h2 class="no_top_margin"><a href="#">How to create an archive page</a></h2>
 
                 <p>It's fine to keep 5 or 10 posts on this page (Hilda's choice), with a link to older posts at the bottom of the list. Forwards and backwards pagination will have to be implemented on any "previous" pages. Please talk to Amit to use his pagination implementation from the News site. <a href="#" class="read_more">Read more...</a></p>
-                <p>[ Twitter Facebook Google+ Widget ]</p>
+                <ul class="social-buttons inline_list">
+                    <li><button data-share="Facebook" title="Share on Facebook">Share on Facebook</button></li>
+                    <li><button data-share="Twitter" title="Share on Twitter">Share on Twitter</button></li>
+                    <li><button data-share="Google" title="Share on Google+">Share on Google+</button></li>
+                </ul>
             </div>
             <div style="background-color:#cc5">Put the same pagination as the News website in here</div>
         </div>
