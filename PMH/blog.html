@@ -154,7 +154,7 @@ background-image: -webkit-gradient(
 /* should be added to the ".more_research h2" rule from previous pages */
 .anatomy h2{font-size:1.3846em;margin:0}
 .anatomy h2{color:#2f4a8b}
-.anatomy p + h2{margin-top:1.3846em}
+.antomy p + h2{margin-top:1.3846em}
 .portlet .related_conditions{list-style-type:none;margin-bottom:1em}
 .related_conditions li{margin-bottom:3px}
 
@@ -199,7 +199,7 @@ background-image: -webkit-gradient(
 
 .blog_post{clear:both;margin:2em 1em 2em 0;padding:0 0 1em;border-bottom:1px solid #ececec;overflow:hidden}
 .date{font-size:11px;color:#666}
-.blog_post h2{font-size:28px;line-height:40px;font-weight:normal;font-family:'Merriweather',georgia,times new roman,serif;margin-bottom:.2em;color:#2F4A8B}
+.blog_post h2{font-size:28px;line-height:37px;font-weight:normal;font-family:'Merriweather',georgia,times new roman,serif;margin-bottom:.5em;color:#2F4A8B}
 .blog_post h2 a{color:inherit;text-decoration:none}
 .blog_post h2 a:hover{text-decoration:underline}
 .blog_post img{float:right;margin:0 0 1em 2em;border-radius:9px}
@@ -214,8 +214,9 @@ background-image: -webkit-gradient(
 /* just becuase i hard code the rss url, doesn't mean you can. find it in the portal db */
 .rss{background:transparent url('http://static.pubmed.gov/portal/portal3rc.fcgi/3822452/img/29146') no-repeat left top;padding-left:21px}
 
-.blog_post .social-buttons{opacity:.25;transition:opacity .2s linear}
-.blog_post:hover .social-buttons{opacity:1;transition:opacity .2s linear}
+.blog_post .social-buttons button{opacity:.25;transition:opacity .2s linear}
+.blog_post:hover .social-buttons button{opacity:.5;transition:opacity .2s linear}
+.blog_post .social-buttons button:hover{opacity:1}
 /* stolen from NWS-403 */
 .social-buttons button {
 background: none no-repeat scroll left top transparent;
@@ -314,6 +315,7 @@ background-image: url("img/google.gif");
                 <h2 class="no_bottom_margin">Subscribe</h2>
                 <h3 class="half_rhythm"><a href="#whatever_the_blogs_url_is">PubMed Health Blog</a></h3> 
                 <a href="#" class="rss">RSS</a>
+                <p>[twitter, g+, and the rest go here]</p>
                 <h4 class="half_rhythm"><label for="email">Email</label></h4>
                 <!-- this needs to be a NCBI Jig button, standard gray color -->
                 <input id="email" /><button class="jig-ncbibutton">Subscribe</button>
